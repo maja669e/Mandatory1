@@ -9,6 +9,26 @@ app.get("/", (req, res) => {
 });
 
 
+app.get("/", (req, res) => {
+    res.sendFile(__dirname + "/public/snippets.html");
+});
+
+
+app.get("/", (req, res) => {
+    res.sendFile(__dirname + "/public/terminal.html");
+});
+
+
+app.get("/", (req, res) => {
+    res.sendFile(__dirname + "/public/theory.html");
+});
+
+
+app.get("/", (req, res) => {
+    res.sendFile(__dirname + "/public/tools.html");
+});
+
+
 const PORT = process.env.PORT || 8080;
 
 const server = app.listen(PORT, (error) => {
