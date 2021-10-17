@@ -20,11 +20,6 @@ app.get("/", (req, res) => {
 
 
 app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/public/theory.html");
-});
-
-
-app.get("/", (req, res) => {
     res.sendFile(__dirname + "/public/tools.html");
 });
 
